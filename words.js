@@ -334,3 +334,515 @@ var SpellingHeroData = [
     "category": "出差與交通"
   }
 ];
+// ==========================================
+// 📚 單字資料庫 (SpellingHeroData)
+// 第二批次：擴充單字區 (已加入 category 屬性)
+// ==========================================
+SpellingHeroData = SpellingHeroData.concat([
+  {
+    "english": "directors",
+    "chinese": "董事；主管；導演 (n.)",
+    "sentence": "The board of directors will hold a meeting next Monday to discuss the upcoming merger.",
+    "synonyms": "managers (經理), executives (高階主管), administrators (管理者), supervisors (監督者)",
+    "antonyms": "subordinates (下屬), employees (員工), staff (職員)",
+    "confused": "dictators (獨裁者), directories (目錄)",
+    "roots": "di- (分開) + regere (引導) + -or (人) + -s (複數)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+directors",
+    "category": "人事與管理"
+  },
+  {
+    "english": "experts",
+    "chinese": "專家 (n.)",
+    "sentence": "Our company has hired a team of IT experts to upgrade the cybersecurity system.",
+    "synonyms": "specialists (專家), professionals (專業人士), authorities (權威), masters (大師)",
+    "antonyms": "beginners (初學者), amateurs (業餘愛好者), novices (新手)",
+    "confused": "exports (出口), excerpts (摘錄)",
+    "roots": "ex- (向外) + periri (嘗試) + -s (複數)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+experts",
+    "category": "人事與管理"
+  },
+  {
+    "english": "shareholders",
+    "chinese": "股東 (n.)",
+    "sentence": "The CEO assured the shareholders that the quarterly profit would exceed expectations.",
+    "synonyms": "stockholders (股東), investors (投資者), stakeholders (利益相關者)",
+    "antonyms": "無",
+    "confused": "stakeholders (利益相關者)",
+    "roots": "share (份額) + hold (持有) + -er (人) + -s (複數)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+shareholders",
+    "category": "財務與金融"
+  },
+  {
+    "english": "targets",
+    "chinese": "目標；對象 (n.) / 把...作為目標 (v.)",
+    "sentence": "The new marketing campaign primarily targets young professionals in urban areas.",
+    "synonyms": "goals (目標), objectives (目的), aims (目標), destinations (目的地)",
+    "antonyms": "無",
+    "confused": "tickets (票券), markets (市場)",
+    "roots": "targe (盾牌) + -et (小詞綴) + -s (複數)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+targets",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "prioritizes",
+    "chinese": "優先考慮；給予...優先權 (v.)",
+    "sentence": "The management prioritizes employee well-being by offering flexible working hours.",
+    "synonyms": "prefers (偏好), favors (偏袒), highlights (強調)",
+    "antonyms": "neglects (忽略), ignores (忽視), disregards (漠視)",
+    "confused": "privatizes (私有化)",
+    "roots": "prior (在前的) + -ity (名詞字尾) + -ize (動詞字尾) + -s (單數第三人稱)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+prioritizes",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "clients",
+    "chinese": "客戶；委託人 (n.)",
+    "sentence": "We need to maintain excellent relationships with our long-term clients to ensure business growth.",
+    "synonyms": "customers (顧客), patrons (主顧), buyers (買家), consumers (消費者)",
+    "antonyms": "sellers (賣家), merchants (商人), vendors (供應商)",
+    "confused": "clinics (診所), climates (氣候)",
+    "roots": "cliens (追隨者/委託人) + -s (複數)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+clients",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "designer",
+    "chinese": "設計師 (n.)",
+    "sentence": "The lead designer presented a revised prototype to the development team yesterday.",
+    "synonyms": "creator (創作者), architect (建築師/締造者), inventor (發明家)",
+    "antonyms": "無",
+    "confused": "design (設計), designate (指定)",
+    "roots": "de- (向下/強調) + signare (標記) + -er (人)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+designer",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "drew",
+    "chinese": "畫；吸引；提取 (v. 過去式)",
+    "sentence": "The promotional event drew a large crowd of potential customers to the new store.",
+    "synonyms": "attracted (吸引), pulled (拉), sketched (描繪), drafted (起草)",
+    "antonyms": "repelled (排斥), pushed (推)",
+    "confused": "draw (畫 - 現在式), drown (淹水/溺死)",
+    "roots": "無",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+drew",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "interface",
+    "chinese": "介面；交界面 (n.)",
+    "sentence": "The software's user interface is highly intuitive, making it easy for beginners to navigate.",
+    "synonyms": "connection (連接), boundary (邊界), interaction (互動)",
+    "antonyms": "無",
+    "confused": "interfere (干涉)",
+    "roots": "inter- (在...之間) + face (表面)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+interface",
+    "category": "生產與製造"
+  },
+  {
+    "english": "cooperate",
+    "chinese": "合作；協作 (v.)",
+    "sentence": "The two departments must cooperate closely to complete the project before the deadline.",
+    "synonyms": "collaborate (協作), assist (協助), coordinate (協調), contribute (貢獻)",
+    "antonyms": "compete (競爭), oppose (反對), hinder (阻礙)",
+    "confused": "operate (操作), corporate (企業的)",
+    "roots": "co- (共同) + operate (操作/運作)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+cooperate",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "corroborate",
+    "chinese": "證實；確證 (v.)",
+    "sentence": "The financial audit will corroborate the figures presented in the annual report.",
+    "synonyms": "confirm (確認), verify (核實), validate (驗證), support (支持)",
+    "antonyms": "contradict (反駁), deny (否認), refute (駁斥)",
+    "confused": "collaborate (合作), corporate (企業的)",
+    "roots": "cor- (共同/加強) + roborare (使堅固)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+corroborate",
+    "category": "財務與金融"
+  },
+  {
+    "english": "demographic",
+    "chinese": "人口統計的；人口群體 (adj./n.)",
+    "sentence": "The survey results show a shift in our primary demographic toward younger consumers.",
+    "synonyms": "population (人口), segment (部分/客群), group (群體)",
+    "antonyms": "無",
+    "confused": "democratic (民主的), epidemic (傳染病)",
+    "roots": "demo- (人民) + graph (寫/記錄) + -ic (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+demographic",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "secured",
+    "chinese": "獲得；確保；保護 (v. 過去式/過去分詞)",
+    "sentence": "The sales team successfully secured a multi-million dollar contract with the overseas client.",
+    "synonyms": "obtained (獲得), acquired (取得), protected (保護), ensured (確保)",
+    "antonyms": "lost (失去), forfeited (喪失), endangered (危及)",
+    "confused": "secret (秘密)",
+    "roots": "se- (分開/免除) + cura (擔憂/照顧) + -ed (過去式/過去分詞)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+secured",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "several",
+    "chinese": "幾個的；數個的 (adj.)",
+    "sentence": "The manager highlighted several key areas for improvement during the performance review.",
+    "synonyms": "various (各種的), multiple (多個的), numerous (許多的), some (一些)",
+    "antonyms": "none (沒有), single (單一的), one (一個)",
+    "confused": "severe (嚴重的), sever (切斷)",
+    "roots": "源自 separare (分開)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+several",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "contracts",
+    "chinese": "合約；契約 (n.) / 簽訂合約；收縮 (v.)",
+    "sentence": "Both parties must sign the contracts before the construction work can begin.",
+    "synonyms": "agreements (協議), deals (交易), treaties (條約), settlements (協議)",
+    "antonyms": "disagreements (分歧)",
+    "confused": "contacts (聯絡人), contrasts (對比)",
+    "roots": "con- (共同) + trahere (拉/拖) + -s (複數)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+contracts",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "encouraging",
+    "chinese": "令人鼓舞的；鼓勵的 (adj. / v. 現在分詞)",
+    "sentence": "The recent increase in online sales is an encouraging sign for the company's future.",
+    "synonyms": "inspiring (激勵的), promising (有希望的), uplifting (令人振奮的), motivating (激發的)",
+    "antonyms": "discouraging (令人沮喪的), depressing (令人憂沉的), disheartening (令人灰心的)",
+    "confused": "courageous (勇敢的)",
+    "roots": "en- (使成為) + courage (勇氣) + -ing (現在分詞/形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+encouraging",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "compromising",
+    "chinese": "妥協的；有損聲譽的 (adj. / v. 現在分詞)",
+    "sentence": "We must find a solution without compromising the quality of our customer service.",
+    "synonyms": "conceding (讓步的), yielding (屈服的), negotiating (談判的)",
+    "antonyms": "unyielding (不屈的), uncompromising (不妥協的), firm (堅定的)",
+    "confused": "comprising (包含), promising (有前途的)",
+    "roots": "com- (共同) + promise (承諾) + -ing (現在分詞/形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+compromising",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "strategies",
+    "chinese": "策略；戰略 (名詞)",
+    "sentence": "The marketing team met to discuss new strategies for entering the Asian market.",
+    "synonyms": "tactics (戰術), approaches (方法), plans (計畫), schemes (方案)",
+    "antonyms": "無",
+    "confused": "tragedies (悲劇), stratagems (計謀)",
+    "roots": "字首 stratos (軍隊) + agein (引導) + -y (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+strategies",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "skincare",
+    "chinese": "護膚 (名詞/形容詞)",
+    "sentence": "Our company is launching a new line of premium skincare products next quarter.",
+    "synonyms": "skin treatment (護膚療程), dermatology (皮膚病學/保養), beauty care (美容保養)",
+    "antonyms": "無",
+    "confused": "healthcare (醫療保健)",
+    "roots": "skin (皮膚) + care (照護)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+skincare",
+    "category": "生產與製造"
+  },
+  {
+    "english": "ingredients",
+    "chinese": "成分；原料 (名詞)",
+    "sentence": "All the ingredients used in our cosmetics are organically sourced.",
+    "synonyms": "components (組成部分), elements (元素), constituents (成分)",
+    "antonyms": "wholes (整體), totals (全部)",
+    "confused": "elements (元素)",
+    "roots": "字首 in- (進入) + 字根 gradi (走) + -ent (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+ingredients",
+    "category": "生產與製造"
+  },
+  {
+    "english": "correct",
+    "chinese": "正確的 (形容詞) / 糾正 (動詞)",
+    "sentence": "Please ensure that all the information on the invoice is correct before sending it out.",
+    "synonyms": "accurate (準確的), right (正確的), precise (精確的)",
+    "antonyms": "incorrect (不正確的), wrong (錯誤的)",
+    "confused": "collect (收集), connect (連接)",
+    "roots": "字首 cor- (一起/完全) + 字根 rect (直的/引導)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+correct",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "survey",
+    "chinese": "調查；問卷 (名詞/動詞)",
+    "sentence": "According to a recent customer satisfaction survey, our service quality has significantly improved.",
+    "synonyms": "poll (民意調查), questionnaire (問卷), study (研究)",
+    "antonyms": "無",
+    "confused": "purvey (供應), survive (生存)",
+    "roots": "字首 sur- (在...之上) + 字根 vey/vid (看)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+survey",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "international",
+    "chinese": "國際的 (形容詞)",
+    "sentence": "The CEO will attend an international trade conference in Geneva next week.",
+    "synonyms": "global (全球的), worldwide (全世界的)",
+    "antonyms": "domestic (國內的), local (當地的)",
+    "confused": "internal (內部的)",
+    "roots": "字首 inter- (在...之間) + nation (國家) + -al (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+international",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "gala",
+    "chinese": "盛會；晚會 (名詞/形容詞)",
+    "sentence": "The charity gala raised over one million dollars for the local hospital.",
+    "synonyms": "festival (節慶), celebration (慶典), feast (宴會)",
+    "antonyms": "無",
+    "confused": "galaxy (星系)",
+    "roots": "源自古法語 gale (歡樂/宴會)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+gala",
+    "category": "住宿與餐飲"
+  },
+  {
+    "english": "twentieth",
+    "chinese": "第二十的；二十分之一 (形容詞/名詞)",
+    "sentence": "The company will celebrate its twentieth anniversary with a grand banquet.",
+    "synonyms": "無",
+    "antonyms": "無",
+    "confused": "twelfth (第十二的)",
+    "roots": "twenty (二十) + -eth (序數字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+twentieth",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "industry",
+    "chinese": "行業；工業 (名詞)",
+    "sentence": "The tech industry is constantly evolving with new innovations and startups.",
+    "synonyms": "business (商業), trade (貿易), sector (部門/產業)",
+    "antonyms": "無",
+    "confused": "industrial (工業的)",
+    "roots": "字首 indu- (在...之內) + 字根 struere (建造) + -y (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+industry",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "risks",
+    "chinese": "風險；危險 (名詞/動詞)",
+    "sentence": "Before investing in the stock market, you must carefully evaluate all potential risks.",
+    "synonyms": "hazards (危險), dangers (危險), threats (威脅)",
+    "antonyms": "safeties (安全), securities (保障)",
+    "confused": "brisks (輕快的)",
+    "roots": "源自義大利語 riscare (冒險)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+risks",
+    "category": "財務與金融"
+  },
+  {
+    "english": "purchasing",
+    "chinese": "採購；購買 (名詞/動名詞)",
+    "sentence": "The purchasing department is responsible for negotiating contracts with our suppliers.",
+    "synonyms": "buying (購買), procuring (採購), acquiring (取得)",
+    "antonyms": "selling (銷售)",
+    "confused": "chasing (追逐)",
+    "roots": "字首 pur- (向前) + 字根 chase (追逐) + -ing (動名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+purchasing",
+    "category": "採購與物流"
+  },
+  {
+    "english": "mutual",
+    "chinese": "相互的；共同的 (形容詞)",
+    "sentence": "The merger was agreed upon because it offered mutual benefits to both corporations.",
+    "synonyms": "reciprocal (互惠的), common (共同的), shared (分享的)",
+    "antonyms": "distinct (不同的), separate (分開的)",
+    "confused": "neutral (中立的)",
+    "roots": "字根 mut (交換) + -ual (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+mutual",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "funds",
+    "chinese": "資金；基金 (名詞/動詞)",
+    "sentence": "We lack the necessary funds to launch the new marketing campaign this quarter.",
+    "synonyms": "capital (資本), money (金錢), finances (財務/資金)",
+    "antonyms": "debts (債務)",
+    "confused": "founds (建立), refunds (退款)",
+    "roots": "源自拉丁語 fundus (底部/基礎)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+funds",
+    "category": "財務與金融"
+  },
+  {
+    "english": "lawsuit",
+    "chinese": "訴訟 (名詞)",
+    "sentence": "The company is facing a massive lawsuit due to the recent data breach.",
+    "synonyms": "litigation (訴訟), case (案件), action (訴訟)",
+    "antonyms": "settlement (和解), agreement (協議)",
+    "confused": "law (法律), lawyer (律師)",
+    "roots": "law (法律) + suit (訴訟/追求)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+lawsuit",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "infringing",
+    "chinese": "侵犯；違反 (動詞/現在分詞)",
+    "sentence": "They were accused of infringing upon the patent rights of their main competitor.",
+    "synonyms": "violating (違反), breaching (破壞/違反)",
+    "antonyms": "obeying (遵守), complying (順從)",
+    "confused": "inflicting (施加)",
+    "roots": "in- (進入) + fring/frangere (打破) + -ing (現在分詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+infringing",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "projector",
+    "chinese": "投影機 (名詞)",
+    "sentence": "Please make sure the projector is set up before the client presentation begins.",
+    "synonyms": "beamer (投影機)",
+    "antonyms": "無",
+    "confused": "project (專案/計畫)",
+    "roots": "pro- (向前) + ject (投擲) + -or (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+projector",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "technician",
+    "chinese": "技術人員 (名詞)",
+    "sentence": "A certified technician will be dispatched to repair the malfunctioning server.",
+    "synonyms": "mechanic (技工), specialist (專家), engineer (工程師)",
+    "antonyms": "amateur (業餘者)",
+    "confused": "technique (技術/技巧)",
+    "roots": "techn (技術) + -ician (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+technician",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "tech",
+    "chinese": "科技；技術 (名詞/形容詞)",
+    "sentence": "The tech industry has seen a massive boom in artificial intelligence developments.",
+    "synonyms": "technology (科技), high-tech (高科技)",
+    "antonyms": "無",
+    "confused": "teach (教導)",
+    "roots": "縮寫自 technology",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+tech",
+    "category": "生產與製造"
+  },
+  {
+    "english": "began",
+    "chinese": "開始 (動詞，begin 的過去式)",
+    "sentence": "The marketing campaign began earlier than expected to capture the holiday sales.",
+    "synonyms": "started (開始), commenced (開始)",
+    "antonyms": "ended (結束), finished (完成)",
+    "confused": "begun (開始，過去分詞)",
+    "roots": "be- (使...) + -ginnan (打開/開始)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+began",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "quarterly",
+    "chinese": "季度的；每季地 (形容詞/副詞/名詞)",
+    "sentence": "We need to submit the quarterly financial report by the end of this week.",
+    "synonyms": "periodically (週期性地)",
+    "antonyms": "yearly (每年的), annual (年度的)",
+    "confused": "quarter (四分之一/季)",
+    "roots": "quarter (四分之一/一季) + -ly (形容詞/副詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+quarterly",
+    "category": "財務與金融"
+  },
+  {
+    "english": "sterilize",
+    "chinese": "殺菌；消毒 (動詞)",
+    "sentence": "The cleaning staff must sterilize the laboratory equipment after each experiment.",
+    "synonyms": "disinfect (消毒), sanitize (進行衛生處理)",
+    "antonyms": "contaminate (汙染), infect (感染)",
+    "confused": "fertilizer (肥料)",
+    "roots": "steril (無菌的/不育的) + -ize (動詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+sterilize",
+    "category": "健康與醫療"
+  },
+  {
+    "english": "sensitive",
+    "chinese": "敏感的；機密的 (形容詞)",
+    "sentence": "You must handle these sensitive documents with care and ensure they remain confidential.",
+    "synonyms": "confidential (機密的), classified (機密的)",
+    "antonyms": "public (公開的)",
+    "confused": "sensible (明智的/合理的)",
+    "roots": "sens (感覺) + -ive (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+sensitive",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "convicted",
+    "chinese": "被定罪的；證明有罪 (動詞過去式/形容詞)",
+    "sentence": "The former CEO was convicted of fraud and sentenced to five years in prison.",
+    "synonyms": "condemned (被判刑的), found guilty (被判有罪的)",
+    "antonyms": "acquitted (被宣告無罪的)",
+    "confused": "convinced (確信的/被說服的)",
+    "roots": "con- (完全) + vict (征服/證明有罪) + -ed (過去式/形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+convicted",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "manipulating",
+    "chinese": "操縱；控制 (動詞/現在分詞)",
+    "sentence": "The auditor discovered that someone had been manipulating the financial records.",
+    "synonyms": "controlling (控制), maneuvering (操縱)",
+    "antonyms": "leaving alone (放任)",
+    "confused": "manufacturing (製造)",
+    "roots": "mani/manu (手) + pulare (充滿/操作) + -ing (現在分詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+manipulating",
+    "category": "財務與金融"
+  },
+  {
+    "english": "crucial",
+    "chinese": "決定性的；至關重要的 (形容詞)",
+    "sentence": "Effective communication is crucial for the success of any multinational project.",
+    "synonyms": "critical (關鍵的), essential (必要的), vital (至關重要的)",
+    "antonyms": "trivial (瑣碎的), unimportant (不重要的)",
+    "confused": "cruel (殘酷的)",
+    "roots": "cruc (十字架/轉折點) + -ial (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+crucial",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "remote",
+    "chinese": "遙遠的；遠端的 (形容詞)",
+    "sentence": "The company implemented a flexible policy that allows employees to work from a remote location.",
+    "synonyms": "distant (遙遠的), faraway (遙遠的)",
+    "antonyms": "close (近的), nearby (附近的)",
+    "confused": "remove (移除)",
+    "roots": "re- (向後) + mot (移動) + -e",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+remote",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "collaborate",
+    "chinese": "合作；協作 (動詞)",
+    "sentence": "The two departments will collaborate to design a more user-friendly interface.",
+    "synonyms": "cooperate (合作), team up (組隊)",
+    "antonyms": "compete (競爭), work independently (獨立工作)",
+    "confused": "corroborate (證實/確證)",
+    "roots": "col- (一起) + labor (勞動/工作) + -ate (動詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+collaborate",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "efficiently",
+    "chinese": "高效地 (副詞)",
+    "sentence": "The new software enables us to process customer inquiries much more efficiently.",
+    "synonyms": "effectively (有效地), productively (有生產力地)",
+    "antonyms": "inefficiently (無效率地), slowly (緩慢地)",
+    "confused": "effectively (有效地)",
+    "roots": "ef- (向外) + fic/fac (做) + -ient (形容詞字尾) + -ly (副詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+efficiently",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "orientation",
+    "chinese": "新生訓練；就職指導；方向 (名詞)",
+    "sentence": "All new hires are required to attend the orientation session on Monday morning.",
+    "synonyms": "induction (就職儀式), training (訓練)",
+    "antonyms": "無",
+    "confused": "ornamentation (裝飾)",
+    "roots": "orient (東方/確定方向) + -ation (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+orientation",
+    "category": "人事與管理"
+  }
+]);
