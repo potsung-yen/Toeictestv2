@@ -1,0 +1,180 @@
+/* =========================================
+   全域與基礎設定
+========================================= */
+body {
+    font-family: "微軟正黑體", sans-serif;
+    background-color: #f5f6fa;
+    text-align: center;
+    color: #2f3542;
+    margin: 0;
+    padding: 20px;
+    /* 讓底部自動空出 iPhone 橫條的安全距離 */
+    padding-bottom: env(safe-area-inset-bottom); 
+}
+
+/* 強制所有可互動元素在手機上不會被攔截，並呈現點擊指標 */
+button, select, input[type="file"], .close-btn, a, label {
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+h1 { color: #e1b12c; margin-bottom: 5px; }
+h2 { margin: 0 0 10px 0; font-size: 32px; color: #d63031; }
+h3 { color: #2d3436; margin-top: 0; }
+.subtitle { color: #7f8c8d; font-weight: bold; margin-bottom: 20px; }
+
+/* =========================================
+   排版與輸入區塊
+========================================= */
+.input-group { 
+    margin-bottom: 15px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+.input-group input[type="text"], .input-group input[type="number"], .input-group select {
+    padding: 8px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.input-group input[type="text"] { width: 60%; min-width: 200px; }
+
+/* =========================================
+   按鈕系統
+========================================= */
+.btn-primary, .btn-secondary, .btn-danger, .btn-success, .btn-boss {
+    padding: 10px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+.btn-primary { background-color: #0984e3; color: white; }
+.btn-primary:hover { background-color: #74b9ff; transform: scale(0.98); }
+
+.btn-secondary { background-color: #636e72; color: white; }
+.btn-secondary:hover { background-color: #b2bec3; }
+
+.btn-danger { background-color: #d63031; color: white; }
+.btn-danger:hover { background-color: #ff7675; }
+
+.btn-success { background-color: #00b894; color: white; }
+.btn-success:hover { background-color: #55efc4; }
+
+.btn-boss { background-color: #8e44ad; color: white; font-size: 18px; }
+.btn-boss:hover { background-color: #9b59b6; transform: scale(1.02); }
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #74b9ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* =========================================
+   遊戲區域與選擇題按鈕
+========================================= */
+.score-board {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-bottom: 20px;
+    background-color: #f1f2f6;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.question-box { background-color: #ffeaa7; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+.feedback { font-size: 20px; font-weight: bold; margin-top: 15px; min-height: 30px; }
+.correct { color: #44bd32; }
+.wrong { color: #e84118; }
+
+.choice-container { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.option-btn {
+    background-color: #f1f2f6; color: #2f3542; border: 2px solid #ced6e0;
+    padding: 12px 20px; font-size: 20px; border-radius: 12px; cursor: pointer;
+    width: 45%; min-width: 150px; transition: all 0.2s; font-weight: bold;
+}
+.option-btn:hover:not(:disabled) { background-color: #dfe4ea; border-color: #74b9ff; }
+.option-btn:active:not(:disabled) { transform: scale(0.95); }
+.option-btn:disabled { cursor: not-allowed; opacity: 0.9; }
+
+/* =========================================
+   彈跳視窗 (Modal) 優化
+========================================= */
+.modal { 
+    position: fixed; 
+    z-index: 9999; /* 確保在最上層，解決遮擋與無法點擊問題 */
+    left: 0; top: 0; width: 100%; height: 100%; 
+    background-color: rgba(0,0,0,0.6); 
+    display: flex; justify-content: center; align-items: center; 
+}
+.modal-content { 
+    background-color: white; 
+    padding: 25px; 
+    border-radius: 15px; 
+    width: 90%; 
+    max-width: 500px; 
+    max-height: 85vh; 
+    display: flex; flex-direction: column; position: relative; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    overflow-y: auto; /* 讓內容過長時可以滑動 */
+}
+.close-btn { 
+    color: #b2bec3; position: absolute; right: 20px; top: 15px; font-size: 32px; 
+    font-weight: bold; transition: color 0.2s;
+}
+.close-btn:hover { color: #d63031; }
+
+/* =========================================
+   單字管理後台表格樣式 (手機適應)
+========================================= */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+th, td {
+    border-bottom: 1px solid #ecf0f1;
+    vertical-align: middle;
+}
+th {
+    background-color: #0984e3;
+    color: white;
+    font-weight: bold;
+}
+tbody tr:hover {
+    background-color: #f1f2f6;
+}
+/* 讓表格在手機端可以左右滑動，不會擠壓破版 */
+div[style*="overflow-x: auto;"] {
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+}
