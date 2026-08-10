@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>多益單字冒險王 - TOEIC Spelling Hero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 多益單字冒險王</h1>
+        <p class="subtitle">背單字也能像打怪一樣刺激！</p>
+
+        <!-- 玩家設定與測試區 -->
+        <div class="card" id="setupArea">
+            <div class="input-group">
+                <label for="playerName">玩家名稱：</label>
+                <input type="text" id="playerName" value="冒險王" placeholder="輸入你的名字" onchange="loadUserData()">
+            </div>
+
+            <!-- 學習計畫選單 -->
+            <div class="input-group">
+                <label>📚 學習計畫：</label>
+                <select id="planSelect" onchange="updateGroupSelect()" style="padding: 8px; font-size: 16px; width: 100%; max-width: 300px; border: 2px solid #0984e3;">
+                    <option value="free" selected>🚀 自由題庫 (全部單字與錯題)</option>
+                    <option value="daily">🔥 每日特訓 (隨機抽取未測單字)</option>
+                    <option value="week">📅 一週破關 (自動情境分組)</option>
+                    <option value="month">🗓️ 一個月破關 (自動情境分組)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>🎯 選擇任務：</label>
+                <select id="groupSelect" style="padding: 8px; font-size: 16px; width: 100%; max-width: 300px;"></select>
+            </div>
+
+            <div class="input-group">
+                <label>遊戲模式：</label>
+                <label><input type="radio" name="gameMode" value="spelling" checked> 拼字模式</label>
+                <label style="margin-left: 15px;"><input type="radio" name="gameMode" value="choice"> 選擇題模式</label>
+            </div>
+
+            <div style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+                <button type="button" class="btn-primary" onclick="startGame()">🚀 開始測試</button>
+                <button type="button" class="btn-secondary" onclick="toggleDashboard()">🗂️ 開啟單字管理後台</button>
+                <button type="button" class="btn-danger" onclick="exportMistakes()">📥 下載錯題本 (CSV)</button>
+            </div>
+        </div>
+
+        <!-- 雙進度條系統 (開始測試後才會顯示) -->
+        <div id="progressArea" style="display: none; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 15px;">
+            
+            <!-- 總完成度 -->
+            <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                <span style="font-size: 14px; color: #2d3436; font-weight: bold;">🏆 總完成度 (徹底掌握)</span>
+                <span id="overallProgressText" style="font-size: 14px; color: #00b894; font-weight: bold;">0 / 0</span>
+            </div>
+            <div style="width: 100%; background: #dfe6e9; border-radius: 10px; height: 12px; margin-bottom: 15px;">
+                <div id="overallProgressBar" style="width: 0%; height: 100%; background: #00b894; border-radius: 10px; transition: width 0.4s ease-in-out;"></div>
+            </div>
+
+            <!-- 本回合/複測進度 -->
+            <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                <span id="roundLabel" style="font-size: 14px; color: #2d3436; font-weight: bold;">🔄 本回合進度 (初測)</span>
+                <span id="roundProgressText" style="font-size: 14px; color: #0984e3; font-weight: bold;">0 / 0</span>
+            </div>
+            <div style="width: 100%; background: #dfe6e9; border-radius: 10px; height: 12px;">
+                <div id="roundProgressBar" style="width: 0%; height: 100%; background: #0984e3; border-radius: 10px; transition: width 0.3s ease-in-out;"></div>
+            </div>
+            
+        </div>
+
+        <!-- 遊戲主畫面 -->
+        <div id="gameArea" class="card" style="display: none;">
+            <div class="score-board">
+                <span>⭐ 得分：<b id="score">0</b></span>
+                <div>
+                    <button type="button" onclick="speakWord()" class="btn-small">🔊 發音</button>
+                    <button type="button" onclick="showWordInfo()" class="btn-small" style="background-color: #8e44ad;">💡 解析</button>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <h2 id="chineseHint" style="color: #2c3e50; margin-bottom: 5px;">中文提示</h2>
+                <p id="sentenceHint" style="color: #7f8c8d; font-style: italic; margin-top: 5px; min-height: 24px;"></p>
+            </div>
+
+            <div id="spellingArea" class="input-group">
+                <input type="text" id="englishInput" placeholder="輸入英文單字..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
+                <button type="button" class="btn-primary" id="submitBtn" onclick="checkAnswer()">送出</button>
+            </div>
+
+            <div id="choiceArea" class="choice-container" style="display: none;"></div>
+
+            <div id="feedbackMsg" class="feedback"></div>
+
+            <div style="margin-top: 15px; display: flex; align-items: center; justify-content: space-between;">
+                <label><input type="checkbox" id="autoNext" checked> 答對自動下一題</label>
+                <button type="button" class="btn-secondary" id="nextBtn" style="display: none;" onclick="nextQuestion()">下一題 ➔</button>
+            </div>
+            
+            <button type="button" class="btn-danger" style="margin-top: 20px; width: 100%;" onclick="endGameEarly()">⏹️ 提早結束並結算</button>
+        </div>
+
+        <!-- 單字庫與分組管理面板 -->
+        <div class="card" id="dashboardArea" style="display: none;">
+            <h3 style="border-bottom: 2px solid #dfe6e9; padding-bottom: 10px;">📊 單字庫與分組管理</h3>
+            
+            <!-- 重置測驗紀錄按鈕 -->
+            <button type="button" class="btn-danger" onclick="resetTestedWords()" style="margin-bottom: 15px; width: 100%;">🔄 重置所有「已測驗」進度 (重新開始計畫)</button>
+
+            <div class="input-group" style="background: #f8efba; padding: 10px; border-radius: 8px;">
+                <label style="font-weight: bold;">➕ 新增自訂組別：</label>
+                <input type="text" id="newGroupName" placeholder="例如: 專案企劃常用字">
+                <button type="button" class="btn-success" onclick="createCustomGroup()">新增</button>
+            </div>
+
+            <div style="text-align: left; margin-bottom: 10px; font-size: 14px; color: #636e72;">
+                💡 系統自動分級標準：初級(0-2次錯誤) | 中級(3-9次) | 高級(10次以上)
+            </div>
+
+            <!-- 單字清單表格 -->
+            <div style="overflow-x: auto;">
+                <table id="wordTable" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 15px;">
+                    <thead>
+                        <tr style="background-color: #0984e3; color: white;">
+                            <th style="padding: 10px; border-radius: 8px 0 0 0; min-width: 100px;">單字</th>
+                            <th style="padding: 10px; min-width: 80px;">錯誤次數</th>
+                            <th style="padding: 10px; min-width: 100px;">系統分級</th>
+                            <th style="padding: 10px; border-radius: 0 8px 0 0; min-width: 120px;">加入自訂組別</th>
+                        </tr>
+                    </thead>
+                    <tbody id="wordTableBody">
+                        <!-- 由 JS 動態生成 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 字典查詢與自動收錄擴充區 -->
+        <div class="card">
+            <h3>📖 單字隨查與擴充</h3>
+            <div class="input-group" style="display: flex; gap: 10px;">
+                <input type="text" id="searchInput" placeholder="搜尋英文或中文..." style="flex-grow: 1;">
+                <button type="button" class="btn-primary" onclick="searchWord()">🔍 搜尋</button>
+            </div>
+            <div id="searchResultArea" style="display: none; margin-top: 15px; text-align: left;"></div>
+            
+            <!-- 自動記錄未收錄單字區塊 -->
+            <div id="unknownWordsArea" style="margin-top: 20px; background: #ffeaa7; padding: 15px; border-radius: 10px; display: none; text-align: left;">
+                <h4 style="margin-top: 0; color: #d63031;">📝 尚未收錄單字 (<span id="unknownCount">0</span>)</h4>
+                <p style="font-size: 14px; color: #636e72; margin-bottom: 10px;">這些是您查詢過但系統沒有的單字，點擊按鈕一鍵交給 AI 擴充！</p>
+                
+                <div id="unknownWordsList" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px;"></div>
+                
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <button type="button" class="btn-success" onclick="copyUnknownWordsPrompt()">📋 複製 AI 擴充提示詞</button>
+                    <button type="button" class="btn-secondary" onclick="clearUnknownWords()">🗑️ 清空清單</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 單字解析 Modal -->
+    <div id="infoModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('infoModal')">&times;</span>
+            <h2 id="modalWordTitle" style="color: #0984e3;">Word</h2>
+            <div id="modalWordContent" style="text-align: left; line-height: 1.6; font-size: 16px;"></div>
+        </div>
+    </div>
+
+    <script src="words.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
