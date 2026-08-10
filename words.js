@@ -846,3 +846,449 @@ SpellingHeroData = SpellingHeroData.concat([
     "category": "人事與管理"
   }
 ]);
+// ==========================================
+// 📚 單字資料庫 (SpellingHeroData)
+// 第三批次：擴充單字區 (已加入 category 屬性)
+// ==========================================
+SpellingHeroData = SpellingHeroData.concat([
+  {
+    "english": "despite",
+    "chinese": "儘管；雖然 (prep.)",
+    "sentence": "Despite the recent economic downturn, our company achieved a record profit this quarter.",
+    "synonyms": "in spite of (儘管), regardless of (不顧), notwithstanding (雖然)",
+    "antonyms": "無",
+    "confused": "despise (鄙視), in spite of (易混淆用法，despite 後不加 of)",
+    "roots": "de- (向下) + specere (看) -> 原意為向下看、藐視，後引申為不顧、儘管",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+despite",
+    "category": "財務與金融"
+  },
+  {
+    "english": "fierce",
+    "chinese": "激烈的；猛烈的 (adj.)",
+    "sentence": "The smartphone market is facing fierce competition from emerging brands.",
+    "synonyms": "intense (激烈的), ferocious (兇猛的), severe (嚴峻的)",
+    "antonyms": "mild (溫和的), gentle (柔和的), calm (平靜的)",
+    "confused": "pierce (刺穿), piece (碎片)",
+    "roots": "源自拉丁文 ferus (野生的、未馴服的)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+fierce",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "drastically",
+    "chinese": "大幅地；徹底地 (adv.)",
+    "sentence": "The new inventory management system has drastically reduced our operational costs.",
+    "synonyms": "significantly (顯著地), severely (嚴重地), radically (根本地)",
+    "antonyms": "mildly (溫和地), slightly (稍微地), moderately (適度地)",
+    "confused": "dramatically (戲劇性地)",
+    "roots": "drast- (行動、嚴厲的) + -ic (形容詞字尾) + -ally (副詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+drastically",
+    "category": "財務與金融"
+  },
+  {
+    "english": "platforms",
+    "chinese": "平台；月台 (n.)",
+    "sentence": "We are planning to launch our advertising campaigns across multiple digital platforms.",
+    "synonyms": "stages (舞台), forums (論壇), foundations (基礎)",
+    "antonyms": "無",
+    "confused": "plateaus (高原), plates (盤子)",
+    "roots": "plat- (平坦的) + form (形狀)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+platforms",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "construction",
+    "chinese": "建設；建築物 (n.)",
+    "sentence": "The construction of the new headquarters is expected to be completed by next year.",
+    "synonyms": "building (建築), structure (結構), creation (建造)",
+    "antonyms": "destruction (破壞), demolition (拆除)",
+    "confused": "instruction (指示), destruction (破壞)",
+    "roots": "con- (共同) + struct (建立) + -ion (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+construction",
+    "category": "地產與建築"
+  },
+  {
+    "english": "chemical",
+    "chinese": "化學的 (adj.) / 化學物質 (n.)",
+    "sentence": "The factory must comply with strict safety regulations when handling hazardous chemicals.",
+    "synonyms": "substance (物質), compound (化合物), synthetic (合成的)",
+    "antonyms": "natural (天然的), organic (有機的)",
+    "confused": "clinical (臨床的), medical (醫療的)",
+    "roots": "chem- (化學) + -ical (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+chemical",
+    "category": "生產與製造"
+  },
+  {
+    "english": "annual",
+    "chinese": "年度的；一年一度的 (adj.)",
+    "sentence": "All employees are required to attend the annual performance review meeting.",
+    "synonyms": "yearly (每年的), once-a-year (一年一次的), anniversary (週年的)",
+    "antonyms": "daily (每天的), monthly (每月的)",
+    "confused": "manual (手冊/手動的), annul (廢除)",
+    "roots": "ann- (年) + -ual (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+annual",
+    "category": "人事與管理"
+  },
+  {
+    "english": "immediately",
+    "chinese": "立即；馬上 (adv.)",
+    "sentence": "Please report any technical issues to the IT department immediately.",
+    "synonyms": "instantly (立即地), promptly (迅速地), right away (馬上)",
+    "antonyms": "delayed (延遲地), eventually (最終), later (稍後)",
+    "confused": "intimately (親密地), mediately (間接地)",
+    "roots": "im- (不) + mediate (居中/延遲) + -ly (副詞字尾) -> 不拖延即立刻",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+immediately",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "orchestra",
+    "chinese": "管弦樂團 (n.)",
+    "sentence": "The corporate sponsor donated a substantial amount of money to the local symphony orchestra.",
+    "synonyms": "band (樂團), ensemble (合奏團), symphony (交響樂團)",
+    "antonyms": "無",
+    "confused": "orchid (蘭花), orchestrate (策劃/精心安排)",
+    "roots": "源自希臘文 orkhestra (合唱團跳舞的半圓形場地)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+orchestra",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "antique",
+    "chinese": "古董的 (adj.) / 古董 (n.)",
+    "sentence": "The CEO decorated his office with rare antique furniture purchased from an auction.",
+    "synonyms": "vintage (復古的), ancient (古老的), old-fashioned (老式的)",
+    "antonyms": "modern (現代的), new (全新的), contemporary (當代的)",
+    "confused": "unique (獨特的), boutique (精品店)",
+    "roots": "ante- (在...之前) -> 衍生為古老的",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+antique",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "generous",
+    "chinese": "慷慨的；大方的 (adj.)",
+    "sentence": "The company offers a generous benefits package to attract top talent in the industry.",
+    "synonyms": "liberal (慷慨的), bountiful (豐富的), unselfish (無私的)",
+    "antonyms": "stingy (小氣的), mean (吝嗇的), selfish (自私的)",
+    "confused": "general (一般的), genius (天才)",
+    "roots": "gen- (出生、種族) + -ous (形容詞字尾) -> 出身高貴的 -> 引申為大方的",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+generous",
+    "category": "人事與管理"
+  },
+  {
+    "english": "adopted",
+    "chinese": "被採用的；被收養的 (adj.)",
+    "sentence": "The new marketing strategy adopted by the team has proven to be highly effective.",
+    "synonyms": "accepted (被接受的), implemented (被實行的), embraced (被採納的)",
+    "antonyms": "rejected (被拒絕的), discarded (被拋棄的), abandoned (被放棄的)",
+    "confused": "adapted (適應的/改編的), adept (熟練的)",
+    "roots": "ad- (去) + opt (選擇) + -ed (過去分詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+adopted",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "strategy",
+    "chinese": "策略；戰略 (n.)",
+    "sentence": "To expand into the Asian market, we need a solid business strategy and local partnerships.",
+    "synonyms": "plan (計畫), approach (方法), tactic (戰術)",
+    "antonyms": "無",
+    "confused": "tragedy (悲劇), stratagem (計謀)",
+    "roots": "strat- (軍隊) + -egy (領導) -> 將軍的藝術 -> 戰略",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+strategy",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "penetrate",
+    "chinese": "穿透；滲透 (市場) (v.)",
+    "sentence": "Our primary goal this year is to penetrate new emerging markets in Southeast Asia.",
+    "synonyms": "pierce (刺穿), infiltrate (滲透), enter (進入)",
+    "antonyms": "retreat (撤退), withdraw (退出)",
+    "confused": "perpetrate (做壞事), punctuate (加標點符號)",
+    "roots": "penitus (在內部) -> 進入內部",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+penetrate",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "launched",
+    "chinese": "發布；發起 (v. 過去式/過去分詞)",
+    "sentence": "The tech firm launched its latest smartphone model at a major press conference yesterday.",
+    "synonyms": "initiated (發起的), started (開始的), introduced (推出的)",
+    "antonyms": "concluded (結束的), terminated (終止的), halted (停止的)",
+    "confused": "lunched (吃午餐), lounged (懶洋洋地躺臥)",
+    "roots": "源自 lancea (長矛) -> 擲出長矛 -> 發起、發動",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+launched",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "massive",
+    "chinese": "巨大的；大量的 (adj.)",
+    "sentence": "The merger resulted in a massive restructuring of the management team.",
+    "synonyms": "huge (巨大的), enormous (龐大的), immense (極大的)",
+    "antonyms": "tiny (微小的), small (小的), insignificant (微不足道的)",
+    "confused": "passive (被動的), message (訊息)",
+    "roots": "mass (塊、團) + -ive (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+massive",
+    "category": "人事與管理"
+  },
+  {
+    "english": "appreciate",
+    "chinese": "感謝；欣賞；升值 (v.)",
+    "sentence": "We deeply appreciate your continued support and dedication to this project.",
+    "synonyms": "value (重視), acknowledge (感謝), recognize (認可)",
+    "antonyms": "depreciate (貶值), disregard (忽視), ignore (不理會)",
+    "confused": "depreciate (貶值), appropriate (適當的/挪用)",
+    "roots": "ap- (朝向) + pretium (價值) + -ate (動詞字尾) -> 給予價值 -> 欣賞、感謝",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+appreciate",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "prevent",
+    "chinese": "預防；阻止 (v.)",
+    "sentence": "Regular maintenance is necessary to prevent any unexpected system failures.",
+    "synonyms": "stop (停止), avoid (避免), avert (避開)",
+    "antonyms": "encourage (鼓勵), allow (允許), cause (導致)",
+    "confused": "invent (發明), present (呈現/禮物)",
+    "roots": "pre- (在...之前) + vent (來) -> 提早來到以阻擋",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+prevent",
+    "category": "生產與製造"
+  },
+  {
+    "english": "crashes",
+    "chinese": "碰撞；(電腦) 當機；暴跌 (n./v. 第三人稱單數)",
+    "sentence": "To avoid data loss from unexpected system crashes, please back up your files daily.",
+    "synonyms": "collisions (碰撞), breakdowns (故障), collapses (崩潰)",
+    "antonyms": "recoveries (恢復), fixes (修復)",
+    "confused": "clashes (衝突), crushes (壓碎)",
+    "roots": "中古英語，模擬物體碎裂的巨大聲響而造的擬聲詞",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+crashes",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "representative",
+    "chinese": "代表 (n.) / 具代表性的 (adj.)",
+    "sentence": "The sales representative will contact you shortly to discuss the contract details.",
+    "synonyms": "delegate (代表), agent (代理人), spokesperson (發言人)",
+    "antonyms": "atypical (非代表性的), unrepresentative (無代表性的), unusual (不尋常的)",
+    "confused": "representation (表現/代表權), represent (代表)",
+    "roots": "re- (再/回) + present (呈現) + -ative (形容詞/名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+representative",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "effectively",
+    "chinese": "有效地 (adv.)",
+    "sentence": "The new software allows us to manage customer data more effectively.",
+    "synonyms": "efficiently (有效率地), successfully (成功地), productively (多產地)",
+    "antonyms": "ineffectively (無效地), poorly (糟糕地), unproductively (無效地)",
+    "confused": "affectively (情感上地), efficiently (有效率地)",
+    "roots": "ex- (外/出) + facere (做) + -ive (形容詞字尾) + -ly (副詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+effectively",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "immediate",
+    "chinese": "立即的 / 直接的 (adj.)",
+    "sentence": "Please give this urgent matter your immediate attention to prevent further issues.",
+    "synonyms": "instant (立即的), prompt (迅速的), swift (快速的)",
+    "antonyms": "delayed (延遲的), postponed (延期的), slow (緩慢的)",
+    "confused": "intermediate (中級的/中間的), mediate (調停)",
+    "roots": "in- (無/不) + medius (中間) -> 中間無間隔的 -> 立即的",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+immediate",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "ensure",
+    "chinese": "確保 / 保證 (v.)",
+    "sentence": "Please ensure that all confidential documents are shredded before you leave the office.",
+    "synonyms": "guarantee (保證), make sure (確保), secure (使安全)",
+    "antonyms": "endanger (危及), jeopardize (使受危險), risk (冒險)",
+    "confused": "insure (投保), assure (向...保證)",
+    "roots": "en- (使成為) + sure (確定)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+ensure",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "intended",
+    "chinese": "預期的 / 為...打算的 (adj.)",
+    "sentence": "The intended audience for this marketing campaign is young professionals in urban areas.",
+    "synonyms": "planned (計畫好的), expected (預期的), proposed (提議的)",
+    "antonyms": "accidental (意外的), unintended (非計畫中的), unintentional (無意的)",
+    "confused": "extended (延長的), pretend (假裝)",
+    "roots": "in- (向內/朝向) + tendere (伸展) + -ed (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+intended",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "controversial",
+    "chinese": "有爭議的 (adj.)",
+    "sentence": "The board of directors decided to drop the controversial proposal after employee protests.",
+    "synonyms": "debatable (可爭論的), disputable (有爭議的), contentious (有異議的)",
+    "antonyms": "undisputed (無可爭議的), agreeable (令人愉快的), certain (確定的)",
+    "confused": "commercial (商業的), control (控制)",
+    "roots": "contra- (反對) + vertere (轉向) + -ial (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+controversial",
+    "category": "人事與管理"
+  },
+  {
+    "english": "investment",
+    "chinese": "投資 (n.)",
+    "sentence": "Buying real estate in this rapidly growing city has proven to be a profitable long-term investment.",
+    "synonyms": "funding (資金), asset (資產), backing (贊助)",
+    "antonyms": "divestment (撤資), withdrawal (撤出/提款), loss (損失)",
+    "confused": "investigation (調查), inventory (存貨)",
+    "roots": "in- (進入) + vestire (穿衣/賦予) + -ment (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+investment",
+    "category": "財務與金融"
+  },
+  {
+    "english": "anticipated",
+    "chinese": "預期的 (adj.) / anticipate 的過去式 (v.)",
+    "sentence": "The company's quarterly profits were much higher than originally anticipated.",
+    "synonyms": "expected (預期的), predicted (預測的), foreseen (預見的)",
+    "antonyms": "unexpected (出乎意料的), surprising (令人驚訝的), unforeseen (未預見的)",
+    "confused": "participated (參加), emancipated (解放的)",
+    "roots": "ante- (前/先) + capere (拿取) + -ed (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+anticipated",
+    "category": "財務與金融"
+  },
+  {
+    "english": "prices",
+    "chinese": "價格 (n. 複數)",
+    "sentence": "We are offering special discounted prices for our most loyal corporate clients this month.",
+    "synonyms": "costs (成本), rates (費率), charges (費用)",
+    "antonyms": "無",
+    "confused": "prizes (獎品), praises (讚美)",
+    "roots": "源自拉丁文 pretium (價值/報酬)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+prices",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "presentation",
+    "chinese": "簡報 / 呈現 (n.)",
+    "sentence": "The CEO will give a presentation on the new global marketing strategy tomorrow morning.",
+    "synonyms": "demonstration (示範), lecture (演講), briefing (簡報)",
+    "antonyms": "concealment (隱藏), hiding (躲藏), suppression (壓制)",
+    "confused": "preservation (保存), preparation (準備)",
+    "roots": "pre- (前) + esse (存在) -> present (出席/呈現) + -ation (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+presentation",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "summarizing",
+    "chinese": "總結 / 摘要 (v. 現在分詞)",
+    "sentence": "The manager is summarizing the main points of the contract for the clients before they sign.",
+    "synonyms": "outlining (概述), concluding (總結), recapping (扼要重述)",
+    "antonyms": "expanding (擴展), elaborating (詳細說明), detailing (詳述)",
+    "confused": "mesmerizing (令人著迷的), summering (避暑)",
+    "roots": "sum- (最高/總和) + -ize (動詞字尾) + -ing (現在分詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+summarizing",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "target",
+    "chinese": "目標 (n.) / 把...作為目標 (v.)",
+    "sentence": "Our sales team failed to meet their monthly sales target by a very small margin.",
+    "synonyms": "goal (目標), objective (目的), aim (瞄準/目標)",
+    "antonyms": "無",
+    "confused": "market (市場), ticket (票)",
+    "roots": "源自古法語 targe (盾牌) + -et (小詞綴)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+target",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "chain",
+    "chinese": "連鎖店 / 鏈 (n.)",
+    "sentence": "The international hotel chain is planning to open three new branches in Southeast Asia.",
+    "synonyms": "series (系列), sequence (順序), string (一串)",
+    "antonyms": "無",
+    "confused": "train (火車), chair (椅子)",
+    "roots": "源自拉丁文 catena (鏈條)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+chain",
+    "category": "住宿與餐飲"
+  },
+  {
+    "english": "sudden",
+    "chinese": "突然的 (adj.)",
+    "sentence": "There was a sudden drop in consumer demand due to the unexpected economic crisis.",
+    "synonyms": "unexpected (意外的), abrupt (唐突的), rapid (快速的)",
+    "antonyms": "gradual (漸進的), expected (預期的), slow (緩慢的)",
+    "confused": "sadden (使悲傷), sodden (濕透的)",
+    "roots": "源自拉丁文 subitus (突然的)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+sudden",
+    "category": "財務與金融"
+  },
+  {
+    "english": "disruption",
+    "chinese": "中斷 / 擾亂 (n.)",
+    "sentence": "Heavy snowfall caused a major disruption to the local transportation network.",
+    "synonyms": "disturbance (干擾), interruption (中斷), interference (干涉)",
+    "antonyms": "order (秩序), continuation (繼續), organization (組織)",
+    "confused": "eruption (爆發), corruption (貪腐)",
+    "roots": "dis- (分開/散開) + rumpere (打破) + -tion (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+disruption",
+    "category": "出差與交通"
+  },
+  {
+    "english": "significant",
+    "chinese": "重要的 / 顯著的 (adj.)",
+    "sentence": "The new marketing strategy has led to a significant increase in our online sales.",
+    "synonyms": "important (重要的), substantial (大量的/實質的), notable (顯著的)",
+    "antonyms": "insignificant (微不足道的), trivial (瑣碎的), minor (次要的)",
+    "confused": "magnificent (壯麗的), signature (簽名)",
+    "roots": "sign- (記號/標記) + facere (製造) + -ant (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+significant",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "regional",
+    "chinese": "地區的 / 局部的 (adj.)",
+    "sentence": "The regional manager will visit our branch next week to inspect the new facilities.",
+    "synonyms": "local (當地的), provincial (省的), territorial (領土的)",
+    "antonyms": "global (全球的), international (國際的), national (全國的)",
+    "confused": "rational (理性的), religion (宗教)",
+    "roots": "regere (統治/管理) -> region (區域) + -al (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+regional",
+    "category": "人事與管理"
+  },
+  {
+    "english": "manufacturers",
+    "chinese": "製造商 (n. 複數)",
+    "sentence": "Many automobile manufacturers are investing heavily in the development of electric vehicles.",
+    "synonyms": "producers (生產者), makers (製造者), creators (創造者)",
+    "antonyms": "consumers (消費者), buyers (買家), customers (顧客)",
+    "confused": "fabricators (裝配工/捏造者), manual (手冊)",
+    "roots": "manu- (手) + facere (製造) + -er (人) + -s (複數字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+manufacturers",
+    "category": "生產與製造"
+  },
+  {
+    "english": "inspired",
+    "chinese": "受到啟發的 (adj.) / inspire 的過去式 (v.)",
+    "sentence": "The design of our new corporate headquarters was inspired by traditional Japanese architecture.",
+    "synonyms": "motivated (有動機的), encouraged (受鼓勵的), influenced (受影響的)",
+    "antonyms": "uninspired (無靈感的), discouraged (氣餒的), unmotivated (無積極性的)",
+    "confused": "expired (過期的), conspired (共謀的)",
+    "roots": "in- (進入) + spirare (呼吸) -> 注入氣息 + -ed (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+inspired",
+    "category": "地產與建築"
+  },
+  {
+    "english": "engaging",
+    "chinese": "吸引人的 / 迷人的 (adj.)",
+    "sentence": "The speaker gave a highly engaging presentation that kept everyone's attention until the end.",
+    "synonyms": "attractive (吸引人的), appealing (迷人的), captivating (令人著迷的)",
+    "antonyms": "boring (無聊的), uninteresting (無趣的), dull (乏味的)",
+    "confused": "gauging (測量), enraged (被激怒的)",
+    "roots": "en- (使) + gage (抵押/保證) -> 使投入 + -ing (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+engaging",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "attendees",
+    "chinese": "出席者 / 參加者 (n. 複數)",
+    "sentence": "All attendees will receive a digital copy of the conference materials via email.",
+    "synonyms": "participants (參加者), guests (賓客), visitors (訪客)",
+    "antonyms": "absentees (缺席者), truants (曠工/曠課者), skippers (逃避者)",
+    "confused": "attendants (服務員), attention (注意力)",
+    "roots": "ad- (朝向) + tendere (伸展) -> attend (參加) + -ee (接受動作的人) + -s (複數字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+attendees",
+    "category": "辦公室與行政"
+  }
+]);
