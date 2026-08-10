@@ -1292,3 +1292,515 @@ SpellingHeroData = SpellingHeroData.concat([
     "category": "辦公室與行政"
   }
 ]);
+// ==========================================
+// 📚 單字資料庫 (SpellingHeroData)
+// 第四批次：擴充單字區 (A系列後半，已加入 category 屬性)
+// ==========================================
+SpellingHeroData = SpellingHeroData.concat([
+  {
+    "english": "alcohol",
+    "chinese": "酒精，酒 (n.)",
+    "sentence": "The company policy strictly prohibits the consumption of alcohol during working hours.",
+    "synonyms": "liquor (烈酒), spirits (烈酒), booze (酒)",
+    "antonyms": "無",
+    "confused": "protocol (草案/協議), charcoal (木炭)",
+    "roots": "al-kuhl (阿拉伯語：銻粉，後指蒸餾精華)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+alcohol",
+    "category": "住宿與餐飲"
+  },
+  {
+    "english": "alert",
+    "chinese": "警覺的 (adj.)",
+    "sentence": "Security guards must remain alert at all times to prevent unauthorized access.",
+    "synonyms": "vigilant (警惕的), watchful (注意的), awake (清醒的)",
+    "antonyms": "careless (粗心的), oblivious (未察覺的), inattentive (不注意的)",
+    "confused": "alter (改變), allude (暗指)",
+    "roots": "all erta (義大利語：在守望塔上)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+alert",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "alleviate",
+    "chinese": "減輕 (v.)",
+    "sentence": "We are taking steps to alleviate the stress of our overworked employees.",
+    "synonyms": "relieve (緩解), ease (減輕), lessen (減少)",
+    "antonyms": "aggravate (加重), worsen (惡化), intensify (加劇)",
+    "confused": "elevate (提升), abbreviate (縮寫)",
+    "roots": "ad- (向) + levis (輕的) + -ate (動詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+alleviate",
+    "category": "健康與醫療"
+  },
+  {
+    "english": "allocate",
+    "chinese": "分配 (v.)",
+    "sentence": "The management decided to allocate more funds to the research and development department.",
+    "synonyms": "assign (分配), distribute (分發), allot (撥出)",
+    "antonyms": "withhold (保留), keep (保持), retain (保留)",
+    "confused": "locate (定位), relocate (重新安置)",
+    "roots": "ad- (向) + locare (放置)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+allocate",
+    "category": "財務與金融"
+  },
+  {
+    "english": "alter",
+    "chinese": "改變 (v.)",
+    "sentence": "We need to alter the production schedule to accommodate the rush order.",
+    "synonyms": "change (改變), modify (修改), adjust (調整)",
+    "antonyms": "maintain (維持), preserve (保留), keep (保持)",
+    "confused": "alert (警覺的), altar (祭壇)",
+    "roots": "alter (其他的)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+alter",
+    "category": "生產與製造"
+  },
+  {
+    "english": "alteration",
+    "chinese": "改變 (n.)",
+    "sentence": "Any alteration to the original contract must be approved by both parties.",
+    "synonyms": "modification (修改), adjustment (調整), shift (轉變)",
+    "antonyms": "preservation (保留), maintenance (維持), fixity (固定)",
+    "confused": "altercation (爭吵), alliteration (頭韻)",
+    "roots": "alter (其他的) + -ation (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+alteration",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "alternative",
+    "chinese": "可選擇的 (adj.)；權宜之計 (n.)",
+    "sentence": "We need to find an alternative supplier in case the current one fails to deliver on time.",
+    "synonyms": "substitute (替代品), option (選項), choice (選擇)",
+    "antonyms": "necessity (必需品), obligation (義務)",
+    "confused": "alternate (交替的), alteration (改變)",
+    "roots": "alter (其他的) + -native (形容詞/名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+alternative",
+    "category": "採購與物流"
+  },
+  {
+    "english": "amazed",
+    "chinese": "驚訝的 (adj.)",
+    "sentence": "The board of directors was amazed by the sudden increase in third-quarter profits.",
+    "synonyms": "astonished (震驚的), surprised (驚訝的), astounded (大吃一驚的)",
+    "antonyms": "unimpressed (無動於衷的), unconcerned (漠不關心的)",
+    "confused": "amazing (令人驚訝的), amused (感到有趣的)",
+    "roots": "a- (加強語氣) + maze (迷宮/迷惑)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+amazed",
+    "category": "人事與管理"
+  },
+  {
+    "english": "amateur",
+    "chinese": "業餘人士 (n.)",
+    "sentence": "The annual photography contest is open to both professionals and amateurs.",
+    "synonyms": "nonprofessional (非專業人士), beginner (初學者), layperson (外行)",
+    "antonyms": "professional (專業人士), expert (專家)",
+    "confused": "mature (成熟的), animator (動畫師)",
+    "roots": "amator (愛好者) < amare (愛)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+amateur",
+    "category": "人事與管理"
+  },
+  {
+    "english": "ambition",
+    "chinese": "野心、企圖心 (n.)",
+    "sentence": "Her ambition is to become the chief executive officer of a multinational corporation.",
+    "synonyms": "aspiration (抱負), goal (目標), desire (渴望)",
+    "antonyms": "apathy (冷漠), laziness (懶惰)",
+    "confused": "amphibian (兩棲動物)",
+    "roots": "ambi- (周圍) + ire (走) -> 四處走動拉選票",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+ambition",
+    "category": "人事與管理"
+  },
+  {
+    "english": "ambitious",
+    "chinese": "有野心的 (adj.)",
+    "sentence": "The start-up company has set an ambitious sales target for the upcoming fiscal year.",
+    "synonyms": "aspiring (有抱負的), driven (積極的), determined (堅決的)",
+    "antonyms": "lazy (懶惰的), unmotivated (無動力的), content (滿足的)",
+    "confused": "ambiguous (模稜兩可的)",
+    "roots": "ambi- (周圍) + ire (走) + -ous (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+ambitious",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "amendment",
+    "chinese": "修正案 (n.)",
+    "sentence": "The committee proposed an amendment to the employment contract to include more benefits.",
+    "synonyms": "revision (修訂), modification (修改), alteration (變更)",
+    "antonyms": "無",
+    "confused": "abandonment (放棄)",
+    "roots": "a- (自) + menda (錯誤) + -ment (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+amendment",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "ample",
+    "chinese": "豐富的 (adj.)",
+    "sentence": "The new office building provides ample parking space for our growing team and clients.",
+    "synonyms": "abundant (豐富的), plenty (充足的), sufficient (足夠的)",
+    "antonyms": "scarce (缺乏的), insufficient (不足的), limited (有限的)",
+    "confused": "sample (樣品), maple (楓樹)",
+    "roots": "amplus (寬廣的)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+ample",
+    "category": "地產與建築"
+  },
+  {
+    "english": "amplify",
+    "chinese": "擴大 (v.)",
+    "sentence": "The new marketing campaign is designed to amplify our brand's presence in the global market.",
+    "synonyms": "expand (擴大), magnify (放大), boost (增強)",
+    "antonyms": "reduce (減少), decrease (降低), lessen (減弱)",
+    "confused": "simplify (簡化), exemplify (舉例說明)",
+    "roots": "amplus (大的) + -ify (動詞字尾，使...)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+amplify",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "amuse",
+    "chinese": "娛樂 (v.)",
+    "sentence": "The speaker tried to amuse the audience with a lighthearted joke before the formal presentation.",
+    "synonyms": "entertain (娛樂), delight (使高興), please (取悅)",
+    "antonyms": "bore (使厭煩), depress (使沮喪), sadden (使悲傷)",
+    "confused": "amaze (使驚訝), abuse (濫用)",
+    "roots": "a- (使) + muser (發呆、沉思)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+amuse",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "amusement",
+    "chinese": "娛樂 (n.)",
+    "sentence": "The corporate retreat included various outdoor activities for the team's amusement and relaxation.",
+    "synonyms": "entertainment (娛樂), recreation (消遣), enjoyment (樂趣)",
+    "antonyms": "boredom (無聊), sadness (悲傷)",
+    "confused": "amazement (驚奇)",
+    "roots": "a- (使) + muser (發呆) + -ment (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+amusement",
+    "category": "人事與管理"
+  },
+  {
+    "english": "anniversary",
+    "chinese": "週年慶 (n.)",
+    "sentence": "The company is hosting a grand banquet to celebrate its 50th anniversary this weekend.",
+    "synonyms": "jubilee (紀念慶典), commemoration (紀念)",
+    "antonyms": "無",
+    "confused": "adversary (對手), university (大學)",
+    "roots": "annus (年) + vertere (轉) + -ary (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+anniversary",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "announce",
+    "chinese": "發佈、公告 (v.)",
+    "sentence": "The CEO will officially announce the details of the upcoming merger during the press conference.",
+    "synonyms": "declare (宣布), proclaim (宣告), broadcast (廣播)",
+    "antonyms": "conceal (隱瞞), hide (隱藏), suppress (壓制)",
+    "confused": "denounce (譴責), pronounce (發音)",
+    "roots": "ad- (向) + nuntiare (報告)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+announce",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "announcement",
+    "chinese": "發佈、公告 (n.)",
+    "sentence": "Please pay close attention to the official announcement regarding the updated remote work policy.",
+    "synonyms": "declaration (聲明), bulletin (公告), notice (通知)",
+    "antonyms": "secret (秘密), concealment (隱瞞)",
+    "confused": "pronouncement (聲明)",
+    "roots": "ad- (向) + nuntiare (報告) + -ment (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+announcement",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "antibiotic",
+    "chinese": "抗生素 (n.)",
+    "sentence": "The doctor prescribed a strong antibiotic to treat the severe infection.",
+    "synonyms": "medicine (藥物), medication (藥物), cure (治療劑)",
+    "antonyms": "無",
+    "confused": "antibody (抗體), antigen (抗原)",
+    "roots": "anti- (反對) + bio- (生命) + -tic (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+antibiotic",
+    "category": "健康與醫療"
+  },
+  {
+    "english": "anticipate",
+    "chinese": "期望 (v.)",
+    "sentence": "We anticipate a slight drop in consumer spending during the slow season next quarter.",
+    "synonyms": "expect (預期), foresee (預見), predict (預測)",
+    "antonyms": "doubt (懷疑), ignore (忽視)",
+    "confused": "participate (參加), emancipate (解放)",
+    "roots": "ante- (之前) + capere (拿取) + -ate (動詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+anticipate",
+    "category": "財務與金融"
+  },
+  {
+    "english": "anticipation",
+    "chinese": "期望 (n.)",
+    "sentence": "The employees waited in great anticipation for the announcement of their annual bonuses.",
+    "synonyms": "expectation (期望), hope (希望), foresight (預見)",
+    "antonyms": "ignorance (無知), doubt (懷疑)",
+    "confused": "participation (參加)",
+    "roots": "ante- (之前) + capere (拿取) + -tion (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+anticipation",
+    "category": "人事與管理"
+  },
+  {
+    "english": "aperitif",
+    "chinese": "飯前酒 (n.)",
+    "sentence": "The host offered the clients an aperitif before serving the main course at the business dinner.",
+    "synonyms": "appetizer (開胃酒/菜), starter (前菜)",
+    "antonyms": "digestif (餐後酒)",
+    "confused": "appetite (胃口)",
+    "roots": "aperire (打開 -> 意指打開胃口)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+aperitif",
+    "category": "住宿與餐飲"
+  },
+  {
+    "english": "apologize",
+    "chinese": "道歉 (n.)",
+    "sentence": "We sincerely apologize for the unexpected delay in processing your recent order.",
+    "synonyms": "say sorry (道歉), beg pardon (請求原諒), express regret (表達遺憾)",
+    "antonyms": "defy (反抗), justify (辯解)",
+    "confused": "appraise (評估)",
+    "roots": "apo- (遠離) + logos (話語) + -ize (動詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+apologize",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "apology",
+    "chinese": "道歉 (n.)",
+    "sentence": "The supplier issued a formal apology for delivering the defective materials last week.",
+    "synonyms": "regret (遺憾), excuse (藉口), amends (賠罪)",
+    "antonyms": "defiance (反抗), justification (辯解)",
+    "confused": "biology (生物學), astrology (占星術)",
+    "roots": "apo- (遠離) + logos (話語) + -y (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+apology",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "appendix",
+    "chinese": "附錄 (n.)",
+    "sentence": "You can find all the detailed financial charts in the appendix of the annual report.",
+    "synonyms": "supplement (補充), addition (附加物), attachment (附件)",
+    "antonyms": "body (正文), main text (主文)",
+    "confused": "appendicitis (盲腸炎), index (索引)",
+    "roots": "ad- (向) + pendere (懸掛)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+appendix",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "appetite",
+    "chinese": "胃口 (n.)",
+    "sentence": "The new marketing campaign gave investors a huge appetite for our company's stock.",
+    "synonyms": "craving (渴望), hunger (飢餓), desire (慾望)",
+    "antonyms": "distaste (厭惡), apathy (冷漠)",
+    "confused": "appetizer (開胃菜), apathy (冷漠)",
+    "roots": "ad- (向) + petere (尋求) + -ite (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+appetite",
+    "category": "財務與金融"
+  },
+  {
+    "english": "appetizer",
+    "chinese": "開胃小菜 (n.)",
+    "sentence": "The restaurant serves complimentary appetizers before the main course.",
+    "synonyms": "starter (前菜), hors d'oeuvre (開胃菜), aperitif (開胃酒)",
+    "antonyms": "dessert (甜點), main course (主菜)",
+    "confused": "appetite (胃口), optimizer (優化器)",
+    "roots": "ad- (向) + petere (尋求) + -izer (事物字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+appetizer",
+    "category": "住宿與餐飲"
+  },
+  {
+    "english": "applaud",
+    "chinese": "鼓掌、喝采 (v.)",
+    "sentence": "The audience stood up to applaud the CEO's inspiring speech.",
+    "synonyms": "clap (拍手), cheer (歡呼), praise (讚揚)",
+    "antonyms": "boo (發出噓聲), criticize (批評), condemn (譴責)",
+    "confused": "appeal (呼籲), apple (蘋果)",
+    "roots": "ad- (向) + plaudere (拍手)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+applaud",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "appliance",
+    "chinese": "小家電、器具、設備 (n.)",
+    "sentence": "The manufacturer offers a two-year warranty on every kitchen appliance they sell.",
+    "synonyms": "device (裝置), equipment (設備), gadget (小器具)",
+    "antonyms": "無",
+    "confused": "application (申請), compliance (順從)",
+    "roots": "ad- (向) + plicare (摺疊) + -ance (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+appliance",
+    "category": "採購與物流"
+  },
+  {
+    "english": "apply",
+    "chinese": "運用；塗抹；申請 (v.)",
+    "sentence": "Candidates who wish to apply for the position must submit their resumes by Friday.",
+    "synonyms": "request (請求), utilize (運用), employ (使用)",
+    "antonyms": "ignore (忽視), reject (拒絕)",
+    "confused": "imply (暗示), supply (供應)",
+    "roots": "ad- (向) + plicare (摺疊)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+apply",
+    "category": "人事與管理"
+  },
+  {
+    "english": "application",
+    "chinese": "申請 (n.)",
+    "sentence": "Please fill out the online application form to register for the upcoming seminar.",
+    "synonyms": "request (申請), usage (應用), implementation (實施)",
+    "antonyms": "無",
+    "confused": "appliance (家電), implication (暗示)",
+    "roots": "ad- (向) + plicare (摺疊) + -tion (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+application",
+    "category": "人事與管理"
+  },
+  {
+    "english": "applicant",
+    "chinese": "申請者 (n.)",
+    "sentence": "Only the most qualified applicant will be selected for the final interview.",
+    "synonyms": "candidate (候選人), hopeful (有希望的人), job-seeker (求職者)",
+    "antonyms": "employer (雇主), interviewer (面試官)",
+    "confused": "application (申請), appliance (設備)",
+    "roots": "ad- (向) + plicare (摺疊) + -ant (人)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+applicant",
+    "category": "人事與管理"
+  },
+  {
+    "english": "appoint",
+    "chinese": "任命、指派 (v.)",
+    "sentence": "The board of directors decided to appoint Mr. Smith as the new regional manager.",
+    "synonyms": "assign (指派), nominate (提名), designate (指定)",
+    "antonyms": "dismiss (解雇), fire (開除), reject (拒絕)",
+    "confused": "disappoint (使失望)",
+    "roots": "ad- (向) + punctum (點)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+appoint",
+    "category": "人事與管理"
+  },
+  {
+    "english": "appointment",
+    "chinese": "約會(公事上) (n.)",
+    "sentence": "I have an important appointment with the tax auditor tomorrow afternoon.",
+    "synonyms": "meeting (會議), arrangement (安排), session (會期)",
+    "antonyms": "dismissal (解雇)",
+    "confused": "disappointment (失望), apportionment (分配)",
+    "roots": "ad- (向) + punctum (點) + -ment (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+appointment",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "approve",
+    "chinese": "同意 (v.)",
+    "sentence": "The manager needs to approve the budget before we can start purchasing equipment.",
+    "synonyms": "agree (同意), consent (答應), endorse (背書)",
+    "antonyms": "reject (拒絕), deny (否認), disapprove (不同意)",
+    "confused": "prove (證明), improve (改善)",
+    "roots": "ad- (向) + probare (證明)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+approve",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "approval",
+    "chinese": "同意、核准 (n.)",
+    "sentence": "We cannot proceed with the construction project without the city council's official approval.",
+    "synonyms": "consent (同意), permission (允許), authorization (授權)",
+    "antonyms": "refusal (拒絕), rejection (拒絕), denial (否認)",
+    "confused": "arrival (抵達), appraisal (評估)",
+    "roots": "ad- (向) + probare (證明) + -al (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+approval",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "approximate",
+    "chinese": "大約的 (adj.)；使....接近 (v.)",
+    "sentence": "The contractor gave us an approximate cost for renovating the entire office building.",
+    "synonyms": "rough (大約的), estimated (估計的), close (接近的)",
+    "antonyms": "exact (精確的), precise (準確的), accurate (正確的)",
+    "confused": "appropriate (適當的)",
+    "roots": "ad- (向) + proximus (最近的) + -ate (字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+approximate",
+    "category": "財務與金融"
+  },
+  {
+    "english": "approximately",
+    "chinese": "大約地 (adv.)",
+    "sentence": "The flight to London will take approximately twelve hours, depending on the weather.",
+    "synonyms": "roughly (大約地), about (大約), around (大約)",
+    "antonyms": "exactly (精確地), precisely (準確地), accurately (正確地)",
+    "confused": "appropriately (適當地)",
+    "roots": "ad- (向) + proximus (最近的) + -ly (副詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+approximately",
+    "category": "出差與交通"
+  },
+  {
+    "english": "arrive",
+    "chinese": "抵達 (v.)",
+    "sentence": "The client is scheduled to arrive at the airport terminal by 3 PM.",
+    "synonyms": "reach (到達), show up (出現), land (降落)",
+    "antonyms": "depart (離開), leave (離開), exit (退出)",
+    "confused": "derive (衍生), strive (努力)",
+    "roots": "ad- (向) + ripa (河岸)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+arrive",
+    "category": "出差與交通"
+  },
+  {
+    "english": "arrival",
+    "chinese": "抵達 (n.)",
+    "sentence": "Upon arrival at the hotel, please check in at the front desk immediately.",
+    "synonyms": "appearance (出現), entrance (進入), coming (到來)",
+    "antonyms": "departure (離開), exit (離開)",
+    "confused": "approval (同意), rival (對手)",
+    "roots": "ad- (向) + ripa (河岸) + -al (名詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+arrival",
+    "category": "住宿與餐飲"
+  },
+  {
+    "english": "articulate",
+    "chinese": "能言善道的 (adj.)",
+    "sentence": "We need a highly articulate spokesperson to present our new product to the media.",
+    "synonyms": "eloquent (雄辯的), fluent (流利的), expressive (表達清晰的)",
+    "antonyms": "inarticulate (口齒不清的), hesitant (猶豫的), silent (沉默的)",
+    "confused": "article (文章), calculate (計算)",
+    "roots": "artus (關節) + -cul- (小) + -ate (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+articulate",
+    "category": "人事與管理"
+  },
+  {
+    "english": "artificial",
+    "chinese": "人工的、合成的 (adj.)",
+    "sentence": "The laboratory uses artificial intelligence to analyze massive amounts of consumer data.",
+    "synonyms": "synthetic (合成的), man-made (人造的), fake (假的)",
+    "antonyms": "natural (天然的), genuine (真實的), real (真實的)",
+    "confused": "artful (狡猾的), superficial (表面的)",
+    "roots": "ars (藝術/技巧) + facere (做) + -ial (形容詞字尾)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+artificial",
+    "category": "生產與製造"
+  },
+  {
+    "english": "ASAP",
+    "chinese": "愈快愈好 (adv.)",
+    "sentence": "Please review the attached document and send me your feedback ASAP.",
+    "synonyms": "immediately (立刻), promptly (迅速地), urgently (緊急地)",
+    "antonyms": "slowly (緩慢地), leisurely (悠閒地)",
+    "confused": "SAP (系統應用程式)",
+    "roots": "As Soon As Possible 的字首縮寫",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+ASAP",
+    "category": "辦公室與行政"
+  },
+  {
+    "english": "aspect",
+    "chinese": "方面 (n.)",
+    "sentence": "We must carefully consider every financial aspect of the proposed merger.",
+    "synonyms": "feature (特徵), facet (層面), perspective (觀點)",
+    "antonyms": "無",
+    "confused": "inspect (檢查), expect (期望)",
+    "roots": "ad- (向) + specere (看)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+aspect",
+    "category": "企劃與業務"
+  },
+  {
+    "english": "assess",
+    "chinese": "評估 (v.)",
+    "sentence": "The committee will assess the damage caused by the recent storm before allocating funds.",
+    "synonyms": "evaluate (評估), estimate (估計), judge (判斷)",
+    "antonyms": "guess (猜測), ignore (忽視)",
+    "confused": "access (進入), asset (資產)",
+    "roots": "ad- (向) + sedere (坐)",
+    "youtube": "https://www.youtube.com/results?search_query=how+to+pronounce+assess",
+    "category": "人事與管理"
+  }
+]);
