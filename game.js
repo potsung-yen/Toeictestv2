@@ -530,6 +530,50 @@ function exportMistakes() {
 }
 
 // ==========================================
+// 🚀 單字下載與匯出功能 (CSV)
+// ==========================================
+function exportFullDatabase() {
+    // 檢查題庫是否有資料
+    if (!wordList || wordList.length === 0) {
+        alert("題庫目前沒有單字喔！");
+        return;
+    }
+
+    // 建立 CSV 標頭
+    let csv = "\uFEFF英文單字,中文意思,例句,同義字,反義字,易混淆字,字根字首,YouTube發音連結,分類\n";
+
+    // 遍歷所有單字並填入資料
+    wordList.forEach(w => {
+        // 處理可能為 undefined 或 null 的情況，並將雙引號替換為兩個雙引號 (CSV跳脫規則)
+        let english = `"${(w.english || "").replace(/"/g, '""')}"`;
+        let chinese = `"${(w.chinese || "").replace(/"/g, '""')}"`;
+        let sentence = `"${(w.sentence || "").replace(/"/g, '""')}"`;
+        let synonyms = `"${(w.synonyms || "").replace(/"/g, '""')}"`;
+        let antonyms = `"${(w.antonyms || "").replace(/"/g, '""')}"`;
+        let confused = `"${(w.confused || "").replace(/"/g, '""')}"`;
+        let roots = `"${(w.roots || "").replace(/"/g, '""')}"`;
+        let youtube = `"${(w.youtube || "").replace(/"/g, '""')}"`;
+        let category = `"${(w.category || "").replace(/"/g, '""')}"`;
+
+        // 將每個單字的資料加入 CSV 字串
+        csv += `${english},${chinese},${sentence},${synonyms},${antonyms},${confused},${roots},${youtube},${category}\n`;
+    });
+
+    // 產生 Blob 物件並設定為 CSV 格式
+    let blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    
+    // 建立隱藏的 a 標籤來觸發下載
+    let link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "多益單字冒險王_完整題庫.csv"; // 設定下載檔名
+    
+    // 觸發下載並移除 a 標籤
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+// ==========================================
 // 📖 字典查詢與「未收錄單字」自動捕捉系統
 // ==========================================
 function searchWord() {
